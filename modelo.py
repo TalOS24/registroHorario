@@ -10,13 +10,15 @@ conn = sqlite3.connect('./registroHorario.db')
 ejecutor = conn.cursor()
 
 
-class ErrorDeMultiplesValores(Exception):
-    print("Ha ocurrido un error que se puede deber a:\n\t*\tintentar asignar varios valores en una clausula que admite solo uno (ej.:UPDATE)")
-
 
 def seleccion(query):
-    consulta = ejecutor.execute(query)
+    try:
+        consulta = ejecutor.execute(query)
+    except Exception as e:
+        print("Error en el select")
     return list(consulta)
+
+
 
 def operacionDirecta(query):
     try:
@@ -41,10 +43,9 @@ def operacionSimple(tipo,tabla,campos,valores,clausulaWhere=None):
         query = "DELETE FROM %s"%tabla
     if tipo == "M":
         query = "UPDATE %s SET %s = %s" % (tabla, campos, valores)
-
-
     if clausulaWhere != None:
         query += " WHERE %s"%clausulaWhere
+
 
     try:
         consulta = ejecutor.execute(query)
@@ -55,9 +56,8 @@ def operacionSimple(tipo,tabla,campos,valores,clausulaWhere=None):
         print(e)
 
 
-#if __name__ == '__main__':
-    #operacionSimple("A","Asistencia"," 'dia','mes','anio','horaIngreso','minutoIngreso','horaEgreso','minutoEgreso','Feriado','Almuerzo' ", " 5,3,2019,8,1,null,null,1,1 " )
-    #operacionSimple("M","Asistencia","MinutoEgreso",10," ID = 8")
+
+
 
 
 
