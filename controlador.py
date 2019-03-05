@@ -19,7 +19,7 @@ def diferenciaHoras(p_marca1,p_marca2):
 
 
 
-
+# TODO: cambiar la BD , solo registrar horas y minutos en Asistencias
 if __name__ == '__main__':
     print(marcar())
 

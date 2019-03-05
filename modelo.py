@@ -9,15 +9,12 @@ import sqlite3
 conn = sqlite3.connect('./registroHorario.db')
 ejecutor = conn.cursor()
 
-
-
 def seleccion(query):
     try:
         consulta = ejecutor.execute(query)
     except Exception as e:
         print("Error en el select")
     return list(consulta)
-
 
 
 def operacionDirecta(query):
@@ -54,6 +51,16 @@ def operacionSimple(tipo,tabla,campos,valores,clausulaWhere=None):
     except Exception as e:
         print("Error al intentar operar.")
         print(e)
+
+
+def backup():
+    filas = seleccion("select * from Asistencias")
+    with open("backup.txt","w") as arch:
+        for fila in filas:
+            arch.write(str(fila)+"\n")
+    arch.close()
+
+
 
 
 
