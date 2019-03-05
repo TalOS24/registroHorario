@@ -4,8 +4,6 @@
 from modelo import operacionSimple
 
 
-# TODO: Construir función que reste horas entre si de manera tal que se pueda calcular tiempo entre marcaciones.
-# TODO: construir función que permita la marcación en el momento que se la llama
 
 def marcar():
     from datetime import datetime
