@@ -12,11 +12,14 @@ def backup():
             arch.write(str(fila)+"\n")
     arch.close()
 
+def almuerzos():
+    #for i in range (9):
+    operacionSimple("M","jornadas", " 'eventos' ", " 1 ")
+    #return "Terminaron las tareas de mantenimiento"
 
 
 """
 if __name__ == '__main__':
-    conectar()
- 
+    conectar() 
 """
 
