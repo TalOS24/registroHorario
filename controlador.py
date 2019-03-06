@@ -47,6 +47,13 @@ def marcar():
     except Exception as e:
         return "Fallo en el proceso de Marcado :-("
 
+# esto debería ser parametrizable si se lleva a un entorno generico
+def calculo(jornada):
+    pass
+
+
+
+
 
 
 if __name__ == '__main__':
