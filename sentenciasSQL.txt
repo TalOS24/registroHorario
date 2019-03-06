@@ -20,8 +20,15 @@ CREATE TABLE `tipoEventos` (
 );
 
 
-
-
+drop table `jornadas`;
+CREATE TABLE `jornadas` (
+	`ID`	INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+	`dia`	INTEGER,
+	`mes`	INTEGER,
+	`anio`	INTEGER,
+	`tipoJornada_FK`	integer,
+	`eventos`	INTEGER
+);
 
 
 
