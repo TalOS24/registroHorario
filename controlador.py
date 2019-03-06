@@ -35,7 +35,10 @@ def marcar():
         if fechaActual == list(ultimaJornada):
             IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s"%ultimaJornada)[0][0]
         else:
+            # se analiza la jornada previa
+            #calculoJornadaPrevia()
             # se crea la jornada
+
             IDjor = operacionSimple("A","jornadas"," 'dia', 'mes', 'anio' ", " %s, %s , %s "%tuple(fechaActual))
             # La siguiente busqueda tambien puede ser por ultimo valor de jornadas
             IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s" %tuple(fechaActual))[0][0]
@@ -47,9 +50,20 @@ def marcar():
     except Exception as e:
         return "Fallo en el proceso de Marcado :-("
 
-# esto debería ser parametrizable si se lleva a un entorno generico
-def calculo(jornada):
-    pass
+def calculoJornadaPrevia():
+    jornadaPrevia = seleccion("SELECT * from jornadas order by ID desc limit 1")[0]
+    registrosEntrada = seleccion("SELECT * FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(jornadaPrevia[0],1))
+    registrosSalida = seleccion("SELECT * FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(jornadaPrevia[0],2))
+    print(registrosEntrada)
+    print(registrosSalida)
+    if len(registrosEntrada) != len(registrosSalida):
+        raise NameError("La cantidad de entradas y salidas son inconsistentes, arregle el problema manualmente")
+    else:
+        pass
+
+
+
+
 
 
 
@@ -57,12 +71,19 @@ def calculo(jornada):
 
 
 if __name__ == '__main__':
-    pass
-"""
-Hacer Marcaciones 
     conectar()
     print(marcar())
+    """
+    conectar()
+    print(calculoJornadaPrevia())
+    """
+
 """
+Hacer Marcaciones 
+    
+"""
+
+
 
 
 

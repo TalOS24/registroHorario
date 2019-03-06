@@ -1,0 +1,4 @@
+TODO: construir funciones que instancien mes a mes presentismo y horas extra en la tabla de conceptos.
+TODO: Construir funcion que llame a calcular jornadas constantemente a fin de que impacte en Base de datos las cantidades hechas
+
+Antes de instanciar la nueva jornada se debe llamar a la funcion que genera los calculos necesario
