@@ -17,36 +17,46 @@ def diferenciaHoras(p_marca1,p_marca2):
     return lapso
 
 def marcar():
+    try:
+        # Conseguir la marca . Revisando la marca del ultimo registro
+        inicioRotacion = 1
+        ultimoTipoMarca = seleccion(" SELECT ID FROM  tipoMarca ORDER BY ID DESC LIMIT 1")[0][0]
+        ultimaMarca = seleccion(" SELECT marca_FK FROM  Asistencias ORDER BY jornada_FK DESC LIMIT 1")[0][0]
+        marca = (ultimaMarca % ultimoTipoMarca) + inicioRotacion
 
-    # Revisa la marca del ultimo registro
-    inicioRotacion = 1
-    ultimoTipoMarca = seleccion(" SELECT ID FROM  tipoMarca ORDER BY ID DESC LIMIT 1")[0][0]
-    ultimaMarca = seleccion(" SELECT marca_FK FROM  Asistencias ORDER BY jornada_FK DESC LIMIT 1")[0][0]
-    marca = (ultimaMarca % ultimoTipoMarca) + inicioRotacion
+        # consigue el tiempo actual
+        temp = getTiempo()
+        fechaActual = temp[:3]
+        horaMinutoActual = temp[-2:]
 
-    # consigue el tiempo actual
-
-    temp = getTiempo()
-    fechaActual = temp[:3]
-    horaMinutoActual = temp[-2:]
-
-    # TODO: si no existe la jornada crearla
+        #Consigue la jornada
         # comparar el tiempo obtenido con la maquina con el de la ultima jornada existente (si no existe se crea)
-    ultimaJornada = seleccion("SELECT dia,mes,anio FROM jornadas ORDER BY ID DESC LIMIT 1")[0]
-    ultimaJornada = (3,3,2019) # prueba
-    if fechaActual == list(ultimaJornada):
-        IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s"%ultimaJornada)[0][0]
-    else:
-        # se crea la jornada
-        IDjor = operacionSimple("A","jornadas"," 'dia', 'mes', 'anio' ", " %s, %s , %s "%tuple(fechaActual))
-        IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s" %tuple(fechaActual))[0][0]
-        print(IDjor)
+        ultimaJornada = seleccion("SELECT dia,mes,anio FROM jornadas ORDER BY ID DESC LIMIT 1")[0]
+        if fechaActual == list(ultimaJornada):
+            IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s"%ultimaJornada)[0][0]
+        else:
+            # se crea la jornada
+            IDjor = operacionSimple("A","jornadas"," 'dia', 'mes', 'anio' ", " %s, %s , %s "%tuple(fechaActual))
+            # La siguiente busqueda tambien puede ser por ultimo valor de jornadas
+            IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s" %tuple(fechaActual))[0][0]
+
+        #Marca asistencia
+        operacionSimple("A","Asistencias","  'jornada_FK', 'hora', 'minuto', 'marca_FK' "," %s, %s, %s, %s" %(IDjor,horaMinutoActual[0],horaMinutoActual[1],marca) )
+        return "Marcacion Exitosa!"
+
+    except Exception as e:
+        return "Fallo en el proceso de Marcado :-("
 
 
 
 if __name__ == '__main__':
+    pass
+"""
+Hacer Marcaciones 
     conectar()
-    marcar()
+    print(marcar())
+"""
+
 
 
 

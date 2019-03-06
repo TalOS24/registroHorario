@@ -49,7 +49,7 @@ def operacionSimple(tipo,tabla,campos,valores,clausulaWhere=None):
     try:
         consulta = ejecutor.execute(query)
         conn.commit()
-        print("Operacion realizada con exito! confimado impacto en Base de datos")
+        #print("Operacion realizada con exito! confimado impacto en Base de datos")
     except Exception as e:
         print("Error al intentar operar.")
         print(e)
