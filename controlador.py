@@ -3,6 +3,8 @@
 
 from modelo import *
 
+# aquí van variables globales que integrar a la BD sería innecesario debido a que son pocos los casos
+horasNecesariasPresentismo = 9
 
 def getTiempo():
     from datetime import datetime
@@ -10,18 +12,28 @@ def getTiempo():
     return [tiempo.day,tiempo.month,tiempo.year,tiempo.hour,tiempo.minute]
 
 def diferenciaHoras(p_marca1,p_marca2):
+    # toma si o si dia mes y año
     from datetime import datetime
-    marca1 = datetime.strptime("%s %s %s %s %s"%tuple(p_marca1),"%d %m %Y %H %M")
-    marca2 = datetime.strptime("%s %s %s %s %s"%tuple(p_marca2),"%d %m %Y %H %M")
-    lapso = marca2 - marca1
-    return lapso
+
+    if len(p_marca1) == len(p_marca2) == 5:
+        marca1 = datetime.strptime("%s %s %s %s %s"%tuple(p_marca1),"%d %m %Y %H %M")
+        marca2 = datetime.strptime("%s %s %s %s %s"%tuple(p_marca2),"%d %m %Y %H %M")
+        lapso = marca2 - marca1
+        return lapso
+    if len(p_marca1) == len(p_marca2) == 2:
+        marca1 = datetime.strptime("%s %s" % tuple(p_marca1), "%H %M")
+        marca2 = datetime.strptime("%s %s" % tuple(p_marca2), "%H %M")
+        lapso = marca2 - marca1
+        return lapso
+    raise NameError('Error en la cantidad de parametros de fechas a sustraer (5 o 3) ningun otro valor.')
+
 
 def marcar():
     try:
         # Conseguir la marca . Revisando la marca del ultimo registro
         inicioRotacion = 1
         ultimoTipoMarca = seleccion(" SELECT ID FROM  tipoMarca ORDER BY ID DESC LIMIT 1")[0][0]
-        ultimaMarca = seleccion(" SELECT marca_FK FROM  Asistencias ORDER BY jornada_FK DESC LIMIT 1")[0][0]
+        ultimaMarca = seleccion(" SELECT marca_FK FROM  Asistencias ORDER BY jornada_FK DESC, ID DESC  LIMIT 1")[0][0]
         marca = (ultimaMarca % ultimoTipoMarca) + inicioRotacion
 
         # consigue el tiempo actual
@@ -36,10 +48,10 @@ def marcar():
             IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s"%ultimaJornada)[0][0]
         else:
             # se analiza la jornada previa
-            #calculoJornadaPrevia()
+            #jornadaPrevia = seleccion("SELECT ID from jornadas order by ID desc limit 1")[0][0]
+            #calculoJornada(jornadaPrevia)
             # se crea la jornada
-
-            IDjor = operacionSimple("A","jornadas"," 'dia', 'mes', 'anio' ", " %s, %s , %s "%tuple(fechaActual))
+            operacionSimple("A","jornadas"," 'dia', 'mes', 'anio', 'tipoJornada_FK' ", " %s, %s , %s, 1 "%tuple(fechaActual))
             # La siguiente busqueda tambien puede ser por ultimo valor de jornadas
             IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s" %tuple(fechaActual))[0][0]
 
@@ -48,40 +60,34 @@ def marcar():
         return "Marcacion Exitosa!"
 
     except Exception as e:
+        print(e)
         return "Fallo en el proceso de Marcado :-("
 
-def calculoJornadaPrevia():
-    jornadaPrevia = seleccion("SELECT * from jornadas order by ID desc limit 1")[0]
-    registrosEntrada = seleccion("SELECT * FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(jornadaPrevia[0],1))
-    registrosSalida = seleccion("SELECT * FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(jornadaPrevia[0],2))
-    print(registrosEntrada)
-    print(registrosSalida)
-    if len(registrosEntrada) != len(registrosSalida):
-        raise NameError("La cantidad de entradas y salidas son inconsistentes, arregle el problema manualmente")
-    else:
-        pass
 
+def calculoJornada(IDjor):
+        presentismo = False
+        horasDemas = 0
+        registrosEntrada = seleccion("SELECT jornada_FK,HORA,MINUTO FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(IDjor,1))
+        registrosSalida = seleccion("SELECT jornada_FK,HORA,MINUTO FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(IDjor,2))
 
-
-
-
-
-
+        if len(registrosEntrada) != len(registrosSalida):
+            raise NameError("La cantidad de entradas y salidas son inconsistentes, arregle el problema manualmente")
+        else:
+           for x,y in  zip(registrosEntrada,registrosSalida):
+               # calculo de presentismo
+               if not presentismo:
+                   dif = diferenciaHoras(x[1:], y[1:])
+                   if dif > horasNecesariasPresentismo:
+                       pass
 
 
 
 if __name__ == '__main__':
     conectar()
     print(marcar())
-    """
-    conectar()
-    print(calculoJornadaPrevia())
-    """
 
-"""
-Hacer Marcaciones 
-    
-"""
+
+
 
 
 
