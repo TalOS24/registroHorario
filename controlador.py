@@ -4,7 +4,7 @@
 from modelo import *
 
 # aquí van variables globales que integrar a la BD sería innecesario debido a que son pocos los casos
-horasNecesariasPresentismo = 9
+horasNecesariasPresentismo = 7
 
 def getTiempo():
     from datetime import datetime
@@ -48,8 +48,9 @@ def marcar():
             IDjor = seleccion("SELECT ID FROM jornadas WHERE DIA=%s AND MES=%s AND ANIO=%s"%ultimaJornada)[0][0]
         else:
             # se analiza la jornada previa
-            #jornadaPrevia = seleccion("SELECT ID from jornadas order by ID desc limit 1")[0][0]
-            #calculoJornada(jornadaPrevia)
+            jornadaPrevia = seleccion("SELECT ID from jornadas order by ID desc limit 1")[0][0]
+            calculoJornada(jornadaPrevia)
+            return None
             # se crea la jornada
             operacionSimple("A","jornadas"," 'dia', 'mes', 'anio', 'tipoJornada_FK' ", " %s, %s , %s, 1 "%tuple(fechaActual))
             # La siguiente busqueda tambien puede ser por ultimo valor de jornadas
@@ -67,6 +68,7 @@ def marcar():
 def calculoJornada(IDjor):
         presentismo = False
         horasDemas = 0
+        mesJornada = seleccion("select mes from jornadas WHERE ID = 10")[0][0]
         registrosEntrada = seleccion("SELECT jornada_FK,HORA,MINUTO FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(IDjor,1))
         registrosSalida = seleccion("SELECT jornada_FK,HORA,MINUTO FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(IDjor,2))
 
@@ -77,14 +79,19 @@ def calculoJornada(IDjor):
                # calculo de presentismo
                if not presentismo:
                    dif = diferenciaHoras(x[1:], y[1:])
-                   if dif > horasNecesariasPresentismo:
-                       pass
+                   if dif.seconds//3600 > horasNecesariasPresentismo:
+                       totalhoras = seleccion(" SELECT totalHoras FROM Conceptos WHERE mes = %i and tipoConcepto_FK = 1"%mesJornada)[0][0]
+                       operacionSimple("M","Conceptos","totalHoras",totalhoras+horasNecesariasPresentismo,"mes = 3 and tipoConcepto_FK = 1")
+                       presentismo = True
+               else:
+                   # se calculan horas extra al 50 o al 100
+
 
 
 
 if __name__ == '__main__':
     conectar()
-    print(marcar())
+    print(calculoJornada(10))
 
 
 
