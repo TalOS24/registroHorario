@@ -84,7 +84,9 @@ def calculoJornada(IDjor):
                        operacionSimple("M","Conceptos","totalHoras",totalhoras+horasNecesariasPresentismo,"mes = 3 and tipoConcepto_FK = 1")
                        presentismo = True
                else:
+                   pass
                    # se calculan horas extra al 50 o al 100
+
 
 
 
