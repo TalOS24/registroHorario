@@ -68,32 +68,52 @@ def marcar():
 def calculoJornada(IDjor):
         presentismo = False
         horasDemas = 0
-        mesJornada = seleccion("select mes from jornadas WHERE ID = 10")[0][0]
+        mesJornada,anioJornada = seleccion("select mes,anio from jornadas WHERE ID = %i"%IDjor)[0]
         registrosEntrada = seleccion("SELECT jornada_FK,HORA,MINUTO FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(IDjor,1))
         registrosSalida = seleccion("SELECT jornada_FK,HORA,MINUTO FROM asistencias WHERE jornada_FK = %i and marca_FK = %i"%(IDjor,2))
 
         if len(registrosEntrada) != len(registrosSalida):
             raise NameError("La cantidad de entradas y salidas son inconsistentes, arregle el problema manualmente")
         else:
-           for x,y in  zip(registrosEntrada,registrosSalida):
+            for x,y in  zip(registrosEntrada,registrosSalida):
+                dif = diferenciaHoras(x[1:], y[1:])
+                dif = dif.seconds / 3600
+
                # calculo de presentismo
-               if not presentismo:
-                   dif = diferenciaHoras(x[1:], y[1:])
-                   if dif.seconds//3600 > horasNecesariasPresentismo:
-                       totalhoras = seleccion(" SELECT totalHoras FROM Conceptos WHERE mes = %i and tipoConcepto_FK = 1"%mesJornada)[0][0]
-                       operacionSimple("M","Conceptos","totalHoras",totalhoras+horasNecesariasPresentismo,"mes = 3 and tipoConcepto_FK = 1")
-                       presentismo = True
-               else:
-                   pass
-                   # se calculan horas extra al 50 o al 100
+                if not presentismo:
+                    id_tipoConcepto = seleccion("select ID from tipoConcepto where descripcion like '%Presentismo%' ")[0][0]
+                    if dif > horasNecesariasPresentismo:
+                        totalhoras = seleccion("SELECT totalHoras FROM Conceptos WHERE mes = %i and anio=%i and tipoConcepto_FK = %i"%(mesJornada,anioJornada,id_tipoConcepto))[0][0]
+                        operacionSimple("M","Conceptos","totalHoras",totalhoras+horasNecesariasPresentismo,"mes = %i and anio=%i and tipoConcepto_FK = %i"%(mesJornada,anioJornada,id_tipoConcepto))
+                        presentismo = True
+                        horasDemas += dif - 7
+                    else:
+                        horasDemas += dif
 
+            # ya calculadas las horas demas resta verificar si la jornada es extra al 50% o al 100%
+            tipoJornada = seleccion("Select tipoJornada.ID,tipoJornada.descripcion from jornadas INNER JOIN tipoJornada ON jornadas.tipoJornada_FK = tipoJornada.ID where jornadas.ID = %i"%IDjor)[0]
+            if tipoJornada[1] == "regular" or tipoJornada[1]== "extra %50":
+                id_tipoConcepto = seleccion("select ID from tipoConcepto where descripcion like '%50%' ")[0][0]
+                print("jornada regular")
 
+            if tipoJornada[1] == "extra %100":
+                id_tipoConcepto = seleccion("select ID from tipoConcepto where descripcion like '%100%' ")[0][0]
+                print("jornada feriado")
 
+            # Ahora se calcula e impacta en BD
+            id_concepto = seleccion(
+                "select Conceptos.ID from Conceptos where Conceptos.tipoConcepto_FK = %i and Conceptos.mes = %i and Conceptos.anio = %i" % (
+                    id_tipoConcepto, mesJornada, anioJornada))[0][0]
+            horasExistentes = seleccion("select totalHoras from conceptos where ID = %i" % id_concepto)[0][0]
+            horasExistentes += horasDemas
+            operacionSimple("M", "Conceptos", "totalHoras", horasExistentes,
+                            "mes = %i and anio=%i and tipoConcepto_FK = %i" % (
+                                mesJornada, anioJornada, id_tipoConcepto))
 
 
 if __name__ == '__main__':
     conectar()
-    print(calculoJornada(10))
+    print(calculoJornada(7))
 
 
 
