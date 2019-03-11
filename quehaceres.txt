@@ -1,5 +1,14 @@
-TODO: construir funciones que instancien mes a mes presentismo y horas extra en la tabla de conceptos.
-TODO: Construir funciones que limpien errores de BD, por ejemplo eliminar registros padres de jornadas sin asistencias hijos, etc.
-TODO: Construir funcion que llame a calcular jornadas constantemente a fin de que impacte en Base de datos las cantidades hechas
+TODO: 1) Construir función de marcacion diferida (a la entrada que calcule un poco antes, a la salida despues)
 
-Antes de instanciar la nueva jornada se debe llamar a la funcion que genera los calculos necesario
+TODO: 2) Construir funciones que calculen Productividad y horas extra en la tabla de conceptos.
+
+TODO: 3) Analizar cuando ejecutar funciones de 2) 
+
+
+TODO: Diseñar la interfaz grafica
+
+TODO: Modificar la BD para que sea relacional
+
+en analisis:
+#Construir funciones que limpien errores de BD, por ejemplo eliminar registros padres de jornadas sin asistencias hijos, etc.
+
