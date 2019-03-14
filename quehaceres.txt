@@ -1,5 +1,3 @@
-TODO: 1) Construir funcion de marcacion diferida (a la entrada que calcule un poco antes, a la salida despues)
-
 TODO: 2) Construir funciones que calculen Productividad y horas extra en la tabla de conceptos.
 
 TODO: 3) Analizar cuando ejecutar funciones de 2) 
