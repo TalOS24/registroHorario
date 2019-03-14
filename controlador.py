@@ -27,7 +27,6 @@ def diferenciaHoras(p_marca1,p_marca2):
         return lapso
     raise NameError('Error en la cantidad de parametros de fechas a sustraer (5 o 3) ningun otro valor.')
 
-
 def marcacion(hora=None,minuto=None):
     try:
         # Consigue la marca . Revisando la marca del ultimo registro
@@ -60,9 +59,6 @@ def marcacion(hora=None,minuto=None):
     except Exception as e:
         print(e)
         return "Fallo en el proceso de Marcado :-("
-
-
-
 
 def calculoJornada(IDjor):
         presentismo = False

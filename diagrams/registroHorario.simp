@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="11.91" multi-file="no" uid="simp1852f85668364fb9b3984cd20c3b7e0a">
+  <meta>
+    <name>registroHorario</name>
+    <authors>Alexis Waisman</authors>
+    <description>Sistema para registrar horarios para el empleado.</description>
+  </meta>
+  <counters>
+    <entity-names />
+    <entity-ids />
+    <diagrams />
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-fbe0495d9fdc4eb19f52a8436be4d1da" name="" task-id-sequence="0">
+    <persons>
+      <person id="P911492f706f3481bbd12a5ee088fbd8e">
+        <first-name>Alexis</first-name>
+        <last-name>Waisman</last-name>
+        <role />
+        <e-mail>Alexis.Waisman@bancoformosa.com.ar</e-mail>
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-7950ab119ac24ceb9a5eb107237a3fef" />
+  <types default="Python">
+    <type-sets>
+      <type-set file="MsSqlTypes.xml" />
+      <type-set file="Python.xml" />
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items />
+  <models />
+</sim-project>
