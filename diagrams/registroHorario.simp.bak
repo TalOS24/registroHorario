@@ -17,13 +17,13 @@
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="ErdEntity" />
-        <value>9</value>
+        <value>5</value>
       </counter>
     </entity-names>
     <entity-ids>
       <counter>
         <item-type type-id="" type="AbstractElementGroup" />
-        <value>108</value>
+        <value>43</value>
       </counter>
       <counter>
         <item-type type-id="actor" type="UmlActor" />
@@ -39,11 +39,7 @@
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="ErdEntity" />
-        <value>10</value>
-      </counter>
-      <counter>
-        <item-type type-id="universal-connector" type="UniversalConnector" />
-        <value>3</value>
+        <value>6</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -142,7 +138,7 @@
         <abstract-items />
         <layer id="72501f7690754f1db6a3b85045b6b96e" name="Default" visible="true" enabled="true" locked="false" />
       </diagram>
-      <diagram type="entity-relationship" id="p7912b0abb46442549823b6b8d25e6399_902087304" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-83,-125" zoom="0.6">
+      <diagram type="entity-relationship" id="p7912b0abb46442549823b6b8d25e6399_902087304" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -154,7 +150,7 @@
           </authors>
           <description />
           <creation-date>03/18/2019 12:36:53</creation-date>
-          <change-date>03/18/2019 12:43:27</change-date>
+          <change-date>03/18/2019 12:37:42</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -184,53 +180,26 @@
             <attributes />
             <indexes />
           </item>
-          <item id="d01eeb5d2af646b0ac5819172f39de07" cid="ENT006" type="erd-entity" name="tipoMarca" style-class="" visibility="package" change-tracking-state="added" creator="P911492f706f3481bbd12a5ee088fbd8e" creation-date="03/18/2019 12:40:48">
-            <entity description="" />
-            <attributes />
-            <indexes />
-          </item>
-          <item id="0669481ed5a149869b3ae58c36d4c182" cid="ENT007" type="erd-entity" name="eventos" style-class="" visibility="package" change-tracking-state="added" creator="P911492f706f3481bbd12a5ee088fbd8e" creation-date="03/18/2019 12:41:06">
-            <entity description="" />
-            <attributes />
-            <indexes />
-          </item>
-          <item id="fcc5f5dd7a514a0cb69fce71a6c3a04a" cid="ENT008" type="erd-entity" name="tipoEventos" style-class="" visibility="package" change-tracking-state="added" creator="P911492f706f3481bbd12a5ee088fbd8e" creation-date="03/18/2019 12:41:12">
-            <entity description="" />
-            <attributes />
-            <indexes />
-          </item>
         </abstract-items>
         <layer id="3a191698fb8b4c828eb552352e9226dc" name="Default" visible="true" enabled="true" locked="false">
           <item id="2ebf8ede37d7416c99dd06407cd9e618" iid="affd4295ee564215b8060a73ee24a1e2" creation-date="03/18/2019 12:36:57" order-index="0" type="entity">
-            <layout ax="-35" ay="-53" awidth="221" aheight="156" x="-35" y="-53" width="221" height="156" />
+            <layout ax="18" ay="-26" awidth="221" aheight="156" x="18" y="-26" width="221" height="156" />
             <erd-entity show-nullability="true" />
           </item>
           <item id="b17ea4fc8c9b49feaa0437b6333abd4c" iid="3f2feec3d4c44f38bf1aab484d686b09" anchor="None" creation-date="03/18/2019 12:37:10" order-index="1" type="entity">
-            <layout ax="589" ay="-105" awidth="140" aheight="156" x="589" y="-105" width="140" height="156" />
+            <layout ax="423" ay="-53" awidth="140" aheight="156" x="423" y="-53" width="140" height="156" />
             <erd-entity show-nullability="true" />
           </item>
           <item id="1ba2146ae419460e93a8362536d8fd9b" iid="07b0fce825d84ff2b34c5391f5fda884" anchor="None" creation-date="03/18/2019 12:37:22" order-index="2" type="entity">
-            <layout ax="612" ay="291" awidth="221" aheight="156" x="612" y="291" width="221" height="156" />
+            <layout ax="202" ay="218" awidth="221" aheight="156" x="202" y="218" width="221" height="156" />
             <erd-entity show-nullability="true" />
           </item>
           <item id="a072625486dc4c63949c7dd2231e2e48" iid="d4689a6988b14ea0937f86e373aa7232" anchor="None" creation-date="03/18/2019 12:37:32" order-index="3" type="entity">
-            <layout ax="777" ay="-95" awidth="140" aheight="158" x="777" y="-95" width="140" height="158" />
+            <layout ax="607" ay="-28" awidth="140" aheight="158" x="607" y="-28" width="140" height="158" />
             <erd-entity show-nullability="true" />
           </item>
           <item id="42c629ec7158450abe4a20012f2994fc" iid="9722cc5c3cc746c88f438944c38a906a" anchor="None" creation-date="03/18/2019 12:37:42" order-index="4" type="entity">
-            <layout ax="900" ay="291" awidth="140" aheight="156" x="900" y="291" width="140" height="156" />
-            <erd-entity show-nullability="true" />
-          </item>
-          <item id="d01eeb5d2af646b0ac5819172f39de07" iid="d55b542a09444a858b273d1b14bb7976" anchor="None" creation-date="03/18/2019 12:40:48" order-index="5" type="entity">
-            <layout ax="362" ay="-100.5" awidth="140" aheight="147" x="362" y="-100.5" width="140" height="147" />
-            <erd-entity show-nullability="true" />
-          </item>
-          <item id="0669481ed5a149869b3ae58c36d4c182" iid="dd91611264ec4fbd9580a612d0fd64b6" anchor="None" creation-date="03/18/2019 12:41:06" order-index="6" type="entity">
-            <layout ax="142" ay="279" awidth="140" aheight="156" x="142" y="279" width="140" height="156" />
-            <erd-entity show-nullability="true" />
-          </item>
-          <item id="fcc5f5dd7a514a0cb69fce71a6c3a04a" iid="92af26d3ff4242dd8a66ede83491e73c" anchor="None" creation-date="03/18/2019 12:41:12" order-index="7" type="entity">
-            <layout ax="405" ay="291" awidth="140" aheight="156" x="405" y="291" width="140" height="156" />
+            <layout ax="563" ay="242" awidth="140" aheight="156" x="563" y="242" width="140" height="156" />
             <erd-entity show-nullability="true" />
           </item>
         </layer>
