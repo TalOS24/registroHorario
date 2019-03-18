@@ -60,7 +60,7 @@ def marcacion(hora=None,minuto=None):
         print(e)
         return "Fallo en el proceso de Marcado :-("
 
-def calculoJornada(IDjor):
+def calculoJornada_ImpactoBD(IDjor):
         presentismo = False
         horasDemas = 0
         mesJornada,anioJornada = seleccion("select mes,anio from jornadas WHERE ID = %i"%IDjor)[0]
@@ -89,11 +89,11 @@ def calculoJornada(IDjor):
             tipoJornada = seleccion("Select tipoJornada.ID,tipoJornada.descripcion from jornadas INNER JOIN tipoJornada ON jornadas.tipoJornada_FK = tipoJornada.ID where jornadas.ID = %i"%IDjor)[0]
             if tipoJornada[1] == "regular" or tipoJornada[1]== "extra %50":
                 id_tipoConcepto = seleccion("select ID from tipoConcepto where descripcion like '%50%' ")[0][0]
-                print("jornada regular")
+                #print("jornada regular")
 
             if tipoJornada[1] == "extra %100":
                 id_tipoConcepto = seleccion("select ID from tipoConcepto where descripcion like '%100%' ")[0][0]
-                print("jornada feriado")
+                #print("jornada feriado")
 
             # Ahora se calcula e impacta en BD
             id_concepto = seleccion(
@@ -106,9 +106,22 @@ def calculoJornada(IDjor):
                                 mesJornada, anioJornada, id_tipoConcepto))
 
 
+# p_ inicio ejemplo: [1,1,1991] = 1 de enero de 1991
+def calculoPeriodo_ImpactoBD(p_inicio,p_fin):
+    inicioJor = seleccion("select id from jornadas where dia = %i and mes = %i and anio= %i"%tuple(p_inicio))[0][0]
+    finJor=seleccion("select id from jornadas where dia = %i and mes = %i and anio= %i"%tuple(p_fin))[0][0]
+    id_jornadas = seleccion("select id from jornadas where id between %i and %i"%(inicioJor,finJor))
+    id_jornadas = [x[0] for x in id_jornadas]
+    for id in id_jornadas:
+        calculoJornada_ImpactoBD(id)
+    return "Exito"
+
+
+
 if __name__ == '__main__':
     conectar()
-    print(marcacion(16,18))
+    print(calculoPeriodo_ImpactoBD([21,2,2019],[14,3,2019]))
+
 
 
 
