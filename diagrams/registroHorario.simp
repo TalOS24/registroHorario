@@ -17,14 +17,10 @@
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="ErdEntity" />
-        <value>9</value>
+        <value>10</value>
       </counter>
     </entity-names>
     <entity-ids>
-      <counter>
-        <item-type type-id="" type="AbstractElementGroup" />
-        <value>108</value>
-      </counter>
       <counter>
         <item-type type-id="actor" type="UmlActor" />
         <value>2</value>
@@ -39,11 +35,19 @@
       </counter>
       <counter>
         <item-type type-id="erd-entity" type="ErdEntity" />
-        <value>10</value>
+        <value>11</value>
       </counter>
       <counter>
         <item-type type-id="universal-connector" type="UniversalConnector" />
-        <value>3</value>
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="" type="AbstractElementGroup" />
+        <value>41</value>
+      </counter>
+      <counter>
+        <item-type type-id="erd-relationship" type="ErdRelation" />
+        <value>2</value>
       </counter>
     </entity-ids>
     <diagrams>
@@ -104,45 +108,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="uml-usecase" id="p3e47b0db1ab94ae1a8c45e0999491479_244388989" name="UseCaseDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-100,-100">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="solid" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>03/18/2019 12:30:18</creation-date>
-          <change-date>03/18/2019 12:30:18</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <abstract-items />
-        <layer id="067abaf7f5584f429f6e0dc2b9c723a7" name="Default" visible="true" enabled="true" locked="false" />
-      </diagram>
-      <diagram type="uml-usecase" id="pf04b58e27f1344b39b177429b06902bc_785296841" name="UseCaseDiagram2" order-index="2" overview-order-index="0" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-100,-100">
-        <style>
-          <background-color index="1" color="#FFFFFFFF" />
-          <background-color index="2" color="#FFFFFFFF" />
-          <background-type type="solid" />
-        </style>
-        <meta>
-          <authors>
-            <author> </author>
-          </authors>
-          <description />
-          <creation-date>03/18/2019 12:32:35</creation-date>
-          <change-date>03/18/2019 12:33:58</change-date>
-          <revision-count>0</revision-count>
-          <version />
-        </meta>
-        <abstract-items />
-        <layer id="72501f7690754f1db6a3b85045b6b96e" name="Default" visible="true" enabled="true" locked="false" />
-      </diagram>
-      <diagram type="entity-relationship" id="p7912b0abb46442549823b6b8d25e6399_902087304" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="-83,-125" zoom="0.6">
+      <diagram type="entity-relationship" id="p7912b0abb46442549823b6b8d25e6399_902087304" name="EntityRelationshipDiagram1" order-index="3" overview-order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-empty-compartments="true" show-special-indicators="false" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-description="false" show-field-description="false" auto-routed-paths="false" view-location="77,-101" zoom="0.8">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -154,14 +120,19 @@
           </authors>
           <description />
           <creation-date>03/18/2019 12:36:53</creation-date>
-          <change-date>03/18/2019 12:43:27</change-date>
+          <change-date>03/18/2019 12:56:03</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <abstract-items>
           <item id="2ebf8ede37d7416c99dd06407cd9e618" cid="ENT001" type="erd-entity" name="Asistencias" style-class="" visibility="package" change-tracking-state="added" creator="P911492f706f3481bbd12a5ee088fbd8e" creation-date="03/18/2019 12:36:57">
             <entity description="" />
-            <attributes />
+            <attributes>
+              <attribute uid="acfc5a9209bae450d8488ce0f1596c347665" cid="0" name="ID" type="int" type-id="MsSql.int" type-size="" foreign-key="false" primary-key="true" nullable="false" description="" default-value="" auto-increment="true" />
+              <attribute uid="ac2d9cb05c74d47e6b42b4cafcdf767a1685" cid="1" name="jornada_FK" type="int" type-id="MsSql.int" type-size="" foreign-key="true" primary-key="false" nullable="false" description="" default-value="" auto-increment="false" />
+              <attribute uid="ac3ea3ad08bd642419e0d15e6aa8660a0723" cid="2" name="hora" type="int" type-id="MsSql.int" type-size="" foreign-key="false" primary-key="false" nullable="true" description="" default-value="" auto-increment="false" />
+              <attribute uid="a6730c4381e46424994120cac09801f35368" cid="3" name="minuto" type="int" type-id="MsSql.int" type-size="" foreign-key="false" primary-key="false" nullable="true" description="" default-value="" auto-increment="false" />
+            </attributes>
             <indexes />
           </item>
           <item id="b17ea4fc8c9b49feaa0437b6333abd4c" cid="ENT002" type="erd-entity" name="Jornadas" style-class="" visibility="package" change-tracking-state="added" creator="P911492f706f3481bbd12a5ee088fbd8e" creation-date="03/18/2019 12:37:10">
@@ -202,7 +173,7 @@
         </abstract-items>
         <layer id="3a191698fb8b4c828eb552352e9226dc" name="Default" visible="true" enabled="true" locked="false">
           <item id="2ebf8ede37d7416c99dd06407cd9e618" iid="affd4295ee564215b8060a73ee24a1e2" creation-date="03/18/2019 12:36:57" order-index="0" type="entity">
-            <layout ax="-35" ay="-53" awidth="221" aheight="156" x="-35" y="-53" width="221" height="156" />
+            <layout ax="101.5" ay="-77" awidth="303.5" aheight="191" x="101.5" y="-77" width="303.5" height="191" />
             <erd-entity show-nullability="true" />
           </item>
           <item id="b17ea4fc8c9b49feaa0437b6333abd4c" iid="3f2feec3d4c44f38bf1aab484d686b09" anchor="None" creation-date="03/18/2019 12:37:10" order-index="1" type="entity">
@@ -222,7 +193,7 @@
             <erd-entity show-nullability="true" />
           </item>
           <item id="d01eeb5d2af646b0ac5819172f39de07" iid="d55b542a09444a858b273d1b14bb7976" anchor="None" creation-date="03/18/2019 12:40:48" order-index="5" type="entity">
-            <layout ax="362" ay="-100.5" awidth="140" aheight="147" x="362" y="-100.5" width="140" height="147" />
+            <layout ax="441" ay="-100.5" awidth="140" aheight="147" x="441" y="-100.5" width="140" height="147" />
             <erd-entity show-nullability="true" />
           </item>
           <item id="0669481ed5a149869b3ae58c36d4c182" iid="dd91611264ec4fbd9580a612d0fd64b6" anchor="None" creation-date="03/18/2019 12:41:06" order-index="6" type="entity">
