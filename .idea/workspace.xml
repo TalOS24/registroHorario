@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb3f55a8-a086-4301-9d82-655cafae3764" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/principal.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registroHorario.db" afterPath="$PROJECT_DIR$/registroHorario.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controlador.py" afterPath="$PROJECT_DIR$/controlador.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelo.py" afterPath="$PROJECT_DIR$/modelo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quehaceres.txt" afterPath="$PROJECT_DIR$/quehaceres.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tareasMantenimiento.py" afterPath="$PROJECT_DIR$/tareasMantenimiento.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/.systemproject.vpp" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/.systemproject.vpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/LayoutPerspectiveData/_C4AVxKD.AACAQOEC.lod" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/LayoutPerspectiveData/_C4AVxKD.AACAQOEC.lod" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/LayoutPerspectiveData/_C4AVxKD.AACAQOEMC.lod" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/LayoutPerspectiveData/_C4AVxKD.AACAQOEMC.lod" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/regHor.vpp" afterPath="$PROJECT_DIR$/diagrams/regHor.vpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/.vp.preference" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/.vp.preference" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/nicknames/5mWpiZaAUeQAxAZV" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/nicknames/5mWpiZaAUeQAxAZV" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/nicknames/NickNameIndexing.xml" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/nicknames/NickNameIndexing.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/projectsViewInfo/QcdRiZaAUeQAxAAQ" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/projectsViewInfo/QcdRiZaAUeQAxAAQ" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/treestates/DIaxiZaAUeQAxAWT" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/treestates/DIaxiZaAUeQAxAWT" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/.vpprefdata/treestates/ProjectTreeStateIndexing.xml" afterPath="$PROJECT_DIR$/diagrams/.vpprefdata/treestates/ProjectTreeStateIndexing.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +35,7 @@
       <file leaf-file-name="modelo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modelo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="986">
               <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
@@ -42,12 +45,14 @@
       <file leaf-file-name="controlador.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="107" column="40" lean-forward="false" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+            <state relative-caret-position="255">
+              <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
               <folding>
                 <element signature="e#249#381#0" expanded="false" />
                 <element signature="e#427#1104#0" expanded="false" />
                 <element signature="e#1148#2773#0" expanded="false" />
+                <element signature="e#2820#5828#0" expanded="false" />
+                <element signature="e#5933#6401#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -56,8 +61,8 @@
       <file leaf-file-name="principal.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/principal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="187">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding>
                 <element signature="e#47#74#0" expanded="true" />
               </folding>
@@ -68,8 +73,8 @@
       <file leaf-file-name="quehaceres.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quehaceres.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+            <state relative-caret-position="34">
+              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -107,7 +112,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="63" />
     <option name="y" value="38" />
     <option name="width" value="683" />
@@ -129,6 +134,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,7 +147,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -282,7 +287,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -322,6 +327,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -350,6 +357,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -394,6 +403,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -422,6 +433,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -451,6 +464,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -479,6 +494,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -507,6 +524,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -527,6 +546,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -548,6 +569,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -569,6 +592,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -589,6 +614,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -609,6 +636,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -629,6 +658,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -649,6 +680,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -669,6 +702,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -689,6 +724,8 @@
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -706,7 +743,7 @@
     <entry file="file://$PROJECT_DIR$/quehaceres" />
     <entry file="file://$PROJECT_DIR$/modelo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="986">
           <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
@@ -722,20 +759,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controlador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="107" column="40" lean-forward="false" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+        <state relative-caret-position="255">
+          <caret line="63" column="36" lean-forward="false" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
           <folding>
             <element signature="e#249#381#0" expanded="false" />
             <element signature="e#427#1104#0" expanded="false" />
             <element signature="e#1148#2773#0" expanded="false" />
+            <element signature="e#2820#5828#0" expanded="false" />
+            <element signature="e#5933#6401#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/principal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="187">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding>
             <element signature="e#47#74#0" expanded="true" />
           </folding>
@@ -744,8 +783,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/quehaceres.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+        <state relative-caret-position="34">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
           <folding />
         </state>
       </provider>
