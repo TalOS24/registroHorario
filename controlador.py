@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from modelo import *
+from modelo import seleccion,operacionSimple
+
 
 # aquí van variables globales que integrar a la BD sería innecesario debido a que son pocos los casos
 horasNecesariasPresentismo = 7
@@ -104,7 +105,7 @@ def calculoJornada_ImpactoBD(IDjor):
             operacionSimple("M", "Conceptos", "totalHoras", horasExistentes,
                             "mes = %i and anio=%i and tipoConcepto_FK = %i" % (
                                 mesJornada, anioJornada, id_tipoConcepto))
-
+        return "Exito: Jornada Calculada"
 
 # p_ inicio ejemplo: [1,1,1991] = 1 de enero de 1991
 def calculoPeriodo_ImpactoBD(p_inicio,p_fin):
@@ -114,13 +115,9 @@ def calculoPeriodo_ImpactoBD(p_inicio,p_fin):
     id_jornadas = [x[0] for x in id_jornadas]
     for id in id_jornadas:
         calculoJornada_ImpactoBD(id)
-    return "Exito"
+    return "Exito: Periodo calculado"
 
 
-
-if __name__ == '__main__':
-    conectar()
-    print(calculoPeriodo_ImpactoBD([21,2,2019],[14,3,2019]))
 
 
 

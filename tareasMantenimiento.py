@@ -18,8 +18,3 @@ def almuerzos():
     #return "Terminaron las tareas de mantenimiento"
 
 
-"""
-if __name__ == '__main__':
-    conectar() 
-"""
-

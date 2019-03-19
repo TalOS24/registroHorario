@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb3f55a8-a086-4301-9d82-655cafae3764" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/principal.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/registroHorario.db" afterPath="$PROJECT_DIR$/registroHorario.db" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/diagrams/registroHorario.simp" afterPath="$PROJECT_DIR$/diagrams/registroHorario.simp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controlador.py" afterPath="$PROJECT_DIR$/controlador.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modelo.py" afterPath="$PROJECT_DIR$/modelo.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quehaceres.txt" afterPath="$PROJECT_DIR$/quehaceres.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tareasMantenimiento.py" afterPath="$PROJECT_DIR$/tareasMantenimiento.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,8 +22,8 @@
       <file leaf-file-name="tareasMantenimiento.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tareasMantenimiento.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -27,8 +32,8 @@
       <file leaf-file-name="modelo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/modelo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+            <state relative-caret-position="323">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -37,9 +42,25 @@
       <file leaf-file-name="controlador.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controlador.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2006">
-              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="136">
+              <caret line="107" column="40" lean-forward="false" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+              <folding>
+                <element signature="e#249#381#0" expanded="false" />
+                <element signature="e#427#1104#0" expanded="false" />
+                <element signature="e#1148#2773#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="principal.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/principal.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding>
+                <element signature="e#47#74#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,8 +68,8 @@
       <file leaf-file-name="quehaceres.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quehaceres.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -77,9 +98,10 @@
         <option value="$PROJECT_DIR$/ABM.py" />
         <option value="$PROJECT_DIR$/operaciones.py" />
         <option value="$PROJECT_DIR$/backup.txt" />
-        <option value="$PROJECT_DIR$/tareasMantenimiento.py" />
-        <option value="$PROJECT_DIR$/modelo.py" />
         <option value="$PROJECT_DIR$/quehaceres" />
+        <option value="$PROJECT_DIR$/modelo.py" />
+        <option value="$PROJECT_DIR$/tareasMantenimiento.py" />
+        <option value="$PROJECT_DIR$/principal.py" />
         <option value="$PROJECT_DIR$/controlador.py" />
         <option value="$PROJECT_DIR$/quehaceres.txt" />
       </list>
@@ -107,7 +129,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -119,6 +140,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -134,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.controlador">
+  <component name="RunManager" selected="Python.principal">
     <configuration name="ABM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -186,6 +208,23 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="principal" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="registroHorarios" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/principal.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="tareasMantenimiento" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -203,18 +242,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.ABM" />
       <item index="1" class="java.lang.String" itemvalue="Python.modelo" />
       <item index="2" class="java.lang.String" itemvalue="Python.controlador" />
       <item index="3" class="java.lang.String" itemvalue="Python.tareasMantenimiento" />
+      <item index="4" class="java.lang.String" itemvalue="Python.principal" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.controlador" />
-        <item index="1" class="java.lang.String" itemvalue="Python.tareasMantenimiento" />
-        <item index="2" class="java.lang.String" itemvalue="Python.modelo" />
-        <item index="3" class="java.lang.String" itemvalue="Python.ABM" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.principal" />
+        <item index="1" class="java.lang.String" itemvalue="Python.controlador" />
+        <item index="2" class="java.lang.String" itemvalue="Python.tareasMantenimiento" />
+        <item index="3" class="java.lang.String" itemvalue="Python.modelo" />
+        <item index="4" class="java.lang.String" itemvalue="Python.ABM" />
       </list>
     </recent_temporary>
   </component>
@@ -268,24 +309,20 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/quehaceres.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="130" lean-forward="false" selection-start-line="1" selection-start-column="130" selection-end-line="1" selection-end-column="130" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controlador.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1428">
           <caret line="84" column="41" lean-forward="true" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -309,7 +346,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="952">
           <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -349,7 +390,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="60" column="16" lean-forward="true" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -373,7 +418,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
           <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -398,7 +447,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -422,7 +475,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -446,7 +503,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -462,7 +523,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -479,7 +544,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -496,7 +565,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -512,7 +585,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -528,7 +605,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -544,7 +625,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -560,7 +645,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -576,7 +665,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -592,7 +685,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="6" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -607,34 +704,48 @@
     <entry file="file://$PROJECT_DIR$/backup2.txt" />
     <entry file="file://$PROJECT_DIR$/backup.txt" />
     <entry file="file://$PROJECT_DIR$/quehaceres" />
-    <entry file="file://$PROJECT_DIR$/tareasMantenimiento.py">
+    <entry file="file://$PROJECT_DIR$/modelo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        <state relative-caret-position="323">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modelo.py">
+    <entry file="file://$PROJECT_DIR$/tareasMantenimiento.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controlador.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="107" column="40" lean-forward="false" selection-start-line="107" selection-start-column="40" selection-end-line="107" selection-end-column="40" />
+          <folding>
+            <element signature="e#249#381#0" expanded="false" />
+            <element signature="e#427#1104#0" expanded="false" />
+            <element signature="e#1148#2773#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/principal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <element signature="e#47#74#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quehaceres.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
           <folding />
         </state>
       </provider>

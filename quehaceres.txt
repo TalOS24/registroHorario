@@ -1,4 +1,4 @@
-TODO: 3) Analizar cuando ejecutar funciones de 2)
+TODO: 3) Terminar de completar la BD con la tabla de parametria.
 
 TODO: Diseniar la interfaz grafica
 

@@ -56,12 +56,6 @@ def operacionSimple(tipo,tabla,campos,valores,clausulaWhere=None):
 
 
 
-"""
-if __name__ == '__main__':
-    conectar()
-    print(seleccion("select * from CalendarioMeses"))
-"""
-
 
 
 
