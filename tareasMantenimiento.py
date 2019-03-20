@@ -3,6 +3,12 @@
 
 from modelo import *
 
+
+def generarConceptosMensuales():
+    pass
+
+
+
 def backup():
     # Por ahora en txt
     # Resguardo de asistencias
@@ -13,8 +19,10 @@ def backup():
     arch.close()
 
 def almuerzos():
-    #for i in range (9):
     operacionSimple("M","jornadas", " 'eventos' ", " 1 ")
+    return "Se ficho almuerzo"
+
+
     #return "Terminaron las tareas de mantenimiento"
 
 

@@ -3,7 +3,6 @@
 
 from modelo import seleccion,operacionSimple
 
-
 # aquí van variables globales que integrar a la BD sería innecesario debido a que son pocos los casos
 horasNecesariasPresentismo = 7
 
@@ -120,7 +119,6 @@ def calculoPeriodo_ImpactoBD(p_inicio,p_fin):
     for id in id_jornadas:
         calculoJornada_ImpactoBD(id)
     return "Exito: Periodo calculado"
-
 
 
 
