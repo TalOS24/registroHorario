@@ -109,8 +109,12 @@ def calculoJornada_ImpactoBD(IDjor):
 
 # p_ inicio ejemplo: [1,1,1991] = 1 de enero de 1991
 def calculoPeriodo_ImpactoBD(p_inicio,p_fin):
-    inicioJor = seleccion("select id from jornadas where dia = %i and mes = %i and anio= %i"%tuple(p_inicio))[0][0]
-    finJor=seleccion("select id from jornadas where dia = %i and mes = %i and anio= %i"%tuple(p_fin))[0][0]
+    try:
+        inicioJor = seleccion("select id from jornadas where dia = %i and mes = %i and anio= %i"%tuple(p_inicio))[0][0]
+        finJor=seleccion("select id from jornadas where dia = %i and mes = %i and anio= %i"%tuple(p_fin))[0][0]
+    except IndexError as e:
+        raise ValueError("fechas Invalidas")
+
     id_jornadas = seleccion("select id from jornadas where id between %i and %i"%(inicioJor,finJor))
     id_jornadas = [x[0] for x in id_jornadas]
     for id in id_jornadas:
