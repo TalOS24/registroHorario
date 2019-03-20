@@ -18,9 +18,7 @@ def backup():
             arch.write(str(fila)+"\n")
     arch.close()
 
-def almuerzos():
-    operacionSimple("M","jornadas", " 'eventos' ", " 1 ")
-    return "Se ficho almuerzo"
+
 
 
     #return "Terminaron las tareas de mantenimiento"

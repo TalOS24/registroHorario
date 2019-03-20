@@ -6,6 +6,10 @@ from modelo import seleccion,operacionSimple
 # aquí van variables globales que integrar a la BD sería innecesario debido a que son pocos los casos
 horasNecesariasPresentismo = 7
 
+def ficharAlmuerzo(idJor):
+    operacionSimple("M","jornadas", " 'eventos' ", " 1 "," ID = %i"%idJor)
+    return "Se ficho almuerzo"
+
 def getTiempo():
     from datetime import datetime
     tiempo = datetime.now()
