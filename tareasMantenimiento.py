@@ -5,7 +5,19 @@ from modelo import *
 
 
 def generarConceptosMensuales():
-    pass
+    #Capturar ultimo tipo de concepto creado
+    #TODO: Aquí tambien se podría verificar si se elimino algún concepto
+    id_ultimo_concepto = seleccion("select id from tipoConcepto order by id DESC limit 1")[0][0]
+
+    #TODO: Jueves 21/03 - seguir aca...
+
+    """    
+    Falta hacer un bucle for que recorra desde 1 hasta ultimo concepto
+    luego generar los conceptos en la tabla
+    """
+
+    return "Termino de generar conceptos mensuales"
+
 
 
 
