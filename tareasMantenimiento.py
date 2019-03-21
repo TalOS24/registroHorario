@@ -4,12 +4,11 @@
 from modelo import *
 
 
-def generarConceptosMensuales():
+def generarConceptosMensuales(excepciones=[]):
     #Capturar ultimo tipo de concepto creado
     #TODO: Aquí tambien se podría verificar si se elimino algún concepto
-    id_ultimo_concepto = seleccion("select id from tipoConcepto order by id DESC limit 1")[0][0]
-
-    #TODO: Jueves 21/03 - seguir aca...
+    id_ultimo_concepto = seleccion("select id from tipoConcepto order by id DESC ")
+    print(id_ultimo_concepto)
 
     """    
     Falta hacer un bucle for que recorra desde 1 hasta ultimo concepto
