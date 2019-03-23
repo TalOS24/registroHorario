@@ -2,20 +2,19 @@
 # -*- coding: utf-8 -*-
 
 from modelo import *
-
+from controlador import *
 
 def generarConceptosMensuales(excepciones=[]):
-    #Capturar ultimo tipo de concepto creado
-    #TODO: Aquí tambien se podría verificar si se elimino algún concepto
-    id_ultimo_concepto = seleccion("select id from tipoConcepto order by id DESC ")
-    print(id_ultimo_concepto)
+    #Capturar tipos de concepto
+    identificadores  = seleccion("select id from tipoConcepto order by id DESC ")
+    identificadores = enlistar(identificadores)
 
-    """    
-    Falta hacer un bucle for que recorra desde 1 hasta ultimo concepto
-    luego generar los conceptos en la tabla
-    """
+    # obtener la fecha actual
+    fechaActual = getTiempo()[:3]
 
-    return "Termino de generar conceptos mensuales"
+    #TODO: insertar los registros dentro de la tabla concepto
+
+    return identificadores #"Termino de generar conceptos mensuales"
 
 
 

@@ -54,6 +54,16 @@ def operacionSimple(tipo,tabla,campos,valores,clausulaWhere=None):
         print("Error al intentar operar.")
         print(e)
 
+def enlistar(lista):
+    """
+    Toma valores de las consultas y los transforma en listas.
+    El unico caso en el que esto tiene sentido es si la consulta devuelve un único valor
+    :param lista: lista de elementos extraídos de la BD
+    :return: lista de un solo nivel
+    """
+    respuesta = [x[0] for x in lista]
+    return respuesta
+
 
 
 
