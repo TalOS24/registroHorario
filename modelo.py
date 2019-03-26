@@ -52,6 +52,7 @@ def operacionSimple(tipo,tabla,campos,valores,clausulaWhere=None):
         #print("Operacion realizada con exito! confimado impacto en Base de datos")
     except Exception as e:
         print("Error al intentar operar.")
+        print("su consulta es:\n\t%s"%query)
         print(e)
 
 def enlistar(lista):

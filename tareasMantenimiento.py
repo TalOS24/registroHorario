@@ -5,16 +5,23 @@ from modelo import *
 from controlador import *
 
 def generarConceptosMensuales(excepciones=[]):
+    """
+    Esta función se debe correr al principio de mes.
+    No se hacen validaciones (por ejemplo comprobar si ya se corrio este programa) porque
+    esto no es una función a la que accedera el usuario.
+    :param excepciones:
+    :return:
+    """
     #Capturar tipos de concepto
-    identificadores  = seleccion("select id from tipoConcepto order by id DESC ")
+    identificadores  = seleccion("select id from tipoConcepto")
     identificadores = enlistar(identificadores)
-
     # obtener la fecha actual
-    fechaActual = getTiempo()[:3]
-
-    #TODO: insertar los registros dentro de la tabla concepto
-
-    return identificadores #"Termino de generar conceptos mensuales"
+    fechaActual = getTiempo()[1:3]
+    # impactar en BD
+    for ident in identificadores:
+        valores =  "%i,%i,%i,%f"%(*fechaActual,ident,0.0)
+        operacionSimple("A","Conceptos","mes,anio,tipoConcepto_FK,totalHoras",valores)
+    return "Termino de generar conceptos mensuales"
 
 
 
