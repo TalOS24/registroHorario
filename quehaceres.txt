@@ -1,4 +1,6 @@
-TODO: 3) Terminar de completar la BD con la tabla de parametria.
+TODO: forzar error en el controlador , dentro de marcación cuando la hora de salida es menor a la de entrada.
+
+<inconcluso> =  Terminar de completar la BD con la tabla de parametria.
 
 TODO: Diseniar la interfaz grafica
 
@@ -7,5 +9,5 @@ TODO: Modificar la BD para que sea relacional
 Optimizacion (opcional): eliminacion de inconsistencias
 Construir funciones que limpien errores de BD, por ejemplo eliminar registros padres de jornadas sin asistencias hijos, etc.
 
-Optimizacion (opcional): Calculop de periodos
+Optimizacion (opcional): Calculo de periodos
     Se puede construir una tabla que almacene los periodos ya calculados y usarlo para no volver a hacer calculos.
