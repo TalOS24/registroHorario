@@ -14,6 +14,8 @@ def conectar():
 def seleccion(query):
     try:
         consulta = ejecutor.execute(query)
+    except NameError as variable_vacia:
+        print("Usted debe conectar a la base de datos. Por favor use para ello la función conectar() antes de llamar a esta seleccion()")
     except Exception as e:
         print("Error en el select")
     return list(consulta)

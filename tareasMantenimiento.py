@@ -24,20 +24,29 @@ def generarConceptosMensuales(excepciones=[]):
     return "Termino de generar conceptos mensuales"
 
 
-
-
-def backup():
+def backup_manual_asistencias(p_nombre,formato="txt"):
     # Por ahora en txt
     # Resguardo de asistencias
     filas = seleccion("select * from Asistencias")
-    with open("backups.txt","w") as arch:
+    with open("%s.txt"%p_nombre,"w") as arch:
         for fila in filas:
             arch.write(str(fila)+"\n")
     arch.close()
 
+def restore_manual_asistencias():
+    pass
+    # toma por ahora del txt
+    # Restauración que impacta en BD.
+    # return "Terminaron las tareas de mantenimiento"
+
+if __name__ == '__main__':
+    conectar()
+    backup_manual_asistencias("backup")
 
 
 
-    #return "Terminaron las tareas de mantenimiento"
+
+
+
 
 
